@@ -1,0 +1,9 @@
+{
+  "_about": "One person per entry: their ernestdefoe.online account and their discuss.flarum.org account (user id + username). publish-to-flarum.yml reads this so a release that thanks someone mentions them on BOTH forums. Find an id at <forum>/api/users/<username>?bySlug=1. Leave a side out when they have no account there.",
+  "people": [
+    {
+      "edonline": { "id": 45, "username": "Claudius" },
+      "discuss": { "id": 46299, "username": "ClaudiusH" }
+    }
+  ]
+}
