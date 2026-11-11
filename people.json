@@ -1,5 +1,5 @@
 {
-  "_about": "One person per entry: their ernestdefoe.online account and their discuss.flarum.org account (user id + username). publish-to-flarum.yml reads this so a release that thanks someone mentions them on BOTH forums. Find an id at <forum>/api/users/<username>?bySlug=1. Leave a side out when they have no account there.",
+  "_about": "One person per entry: their ernestdefoe.online account and their discuss.flarum.org account (user id + username). publish-to-flarum.yml reads this so a release that thanks someone mentions them on BOTH forums. Find an id at <forum>/api/users/<username>?bySlug=1. Leave a side out when they have no account there. Every value in an entry must be an object (the workflow reads .get on each).",
   "people": [
     {
       "edonline": {
@@ -10,7 +10,10 @@
         "id": 46299,
         "username": "ClaudiusH"
       },
-      "confirmed": "Ernest, 2026-11-11"
+      "confirmed": {
+        "level": "yes",
+        "note": "Ernest, 2026-11-11"
+      }
     },
     {
       "edonline": {
@@ -21,7 +24,10 @@
         "id": 46322,
         "username": "Tutrix"
       },
-      "confirmed": "likely (Ernest, 2026-11-11: same username on both; he believes all are the same person)"
+      "confirmed": {
+        "level": "likely",
+        "note": "Ernest, 2026-11-11: \"Yes I believe so. I know 2 out of the 3 are the same but I believe all of them are correct.\""
+      }
     },
     {
       "edonline": {
@@ -32,7 +38,10 @@
         "id": 46246,
         "username": "Forogramero"
       },
-      "confirmed": "likely (Ernest, 2026-11-11: same username on both; he believes all are the same person)"
+      "confirmed": {
+        "level": "likely",
+        "note": "Ernest, 2026-11-11: \"Yes I believe so. I know 2 out of the 3 are the same but I believe all of them are correct.\""
+      }
     },
     {
       "edonline": {
@@ -43,7 +52,10 @@
         "id": 44495,
         "username": "mabioca"
       },
-      "confirmed": "likely (Ernest, 2026-11-11: same username on both; he believes all are the same person)"
+      "confirmed": {
+        "level": "likely",
+        "note": "Ernest, 2026-11-11: \"Yes I believe so. I know 2 out of the 3 are the same but I believe all of them are correct.\""
+      }
     }
   ]
 }
